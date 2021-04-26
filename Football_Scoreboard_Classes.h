@@ -26,7 +26,7 @@ class Team
     // Setters
     void setName(string n) { name = n; }
     void setCoachName(string sCN) { coachName = sCN; }
-    void setHomecity(string sHC) { homeCity = sHC; }
+    void setHomeCity(string sHC) { homeCity = sHC; }
     void setHomeStatus(bool hs) { homeStatus = hs; }
     void setScore(int s) { score = s; }
     void setTimeoutCount(int tc) { timeoutCount = tc; }
