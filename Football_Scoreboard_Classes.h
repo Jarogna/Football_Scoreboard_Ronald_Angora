@@ -77,6 +77,20 @@ class Scoreboard
       cout << color2 << home.getHomeCity() << reset << "\t\t" << color2 << visitor.getHomeCity() << reset << endl;
       cout << "\n";
       for(int i = 0; i < 36; i++) { cout << color << "*" << reset; } cout << endl;
+      // Show Home Team getHomeStatus
+      cout << "Home> \t";
+      if(home.getHomeStatus() == true)
+      {
+        cout << "Team 1: " << home.getName() << "*";
+      }
+      else if(visitor.getHomeStatus() == true)
+      {
+        cout << "Team 2: " << visitor.getName() << "*";
+      }
+      else
+      {
+        cout << "Error: ";
+      }
+      cout << endl;
     }
-
 };
