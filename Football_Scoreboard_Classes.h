@@ -70,9 +70,9 @@ class Scoreboard
       // Team Names
       cout << color2 << home.getName() << reset << "\t\t" << color2 << visitor.getName() << reset << endl;
       // Scores & Timeout Count
-      cout << "\t  " << score << home.getScore() << reset << "\t\t  " << score << home.getTimeoutCount() << reset << "\t\t" << score << visitor.getTimeoutCount() << reset << "\t\t" << score << visitor.getScore() << reset << endl;
+      cout << "Score:  " << score << home.getScore() << reset <<  "\t\tScore: " << score << visitor.getScore() << reset << "\nTimeouts: " << score << home.getTimeoutCount() << reset << "\t\tTimeouts: " << score << visitor.getTimeoutCount() << reset << endl;
       // Coach Names
-      cout << color2 << home.getCoachName() << reset << "\t" << color2 << visitor.getCoachName() << reset << endl;
+      cout << color2 << home.getCoachName() << reset << "\t\t" << color2 << visitor.getCoachName() << reset << endl;
       // City Names
       cout << color2 << home.getHomeCity() << reset << "\t\t" << color2 << visitor.getHomeCity() << reset << endl;
       cout << "\n";
@@ -94,3 +94,25 @@ class Scoreboard
       cout << endl;
     }
 };
+
+/*
+void clock()
+{
+  int min = 14;
+  int sec;
+  do
+  {
+    for (sec = 59; sec > 0; sec--)
+    {
+      cout << min << " : " << sec << "\r" << flush;
+      sleep(1);
+    } 
+    if (sec == 0)
+    {
+      cout << min << " : " <<sec << "\r" << flush;
+      sleep (1);
+      min--;
+      sec = 59; 
+    }
+  }while(min > 0 || sec > 0);
+}*/
